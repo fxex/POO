@@ -1,0 +1,73 @@
+Este ejercicio se tomó en el parcial – POO - 2020
+
+ENUNCIADO GENERAL
+
+Un test se compone de preguntas. Una pregunta tiene un enunciado a responder. El tipo de pregunta puede ser, Verdadero/Falso, Opción múltiple (hasta 3 opciones) y texto libre.
+
+
+Ejemplo de preguntas.
+
+Verdadero/Falso
+
+Opción Múltiple
+
+Texto Libre
+
+Numero: 15
+
+enunciado: El COVID-19 surgió en China
+
+respuesta: Verdadero
+
+
+Numero: 23
+
+enunciado: El COVID-19 surgió en ..
+
+Opciones:
+
+a) USA
+
+b) China
+
+c) Argentina
+
+respuesta: opción b
+
+Numero: 9
+
+enunciado: ¿Dónde surgió el COVID-19?
+
+respuesta: en china
+
+
+Se necesita un programa que permita generar un test con preguntas de distinto tipos. El programa debe permitir diseñar/cargar el test (asociar preguntas de distinto tipo) y que el usuario conteste las preguntas. 
+
+Luego de realizado el test, requiere distinto tipo de información. (ELIJA AL MENOS 3 OPERACIONES)
+
+Cantidad de preguntas Opción Multiple
+
+Listar las preguntas y respuestas pares.
+
+Listar todas las preguntas y respuestas 
+
+cantidad de preguntas que no son V/F 
+
+cantidad de preguntas V/F formuladas  
+
+listar las respuestas de preguntas Texto Libre 
+
+listar preguntas y respuestas Opción Múltiple 
+
+cantidad de preguntas Texto Libre 
+
+Listar las preguntas y respuestas Verdadero/falso
+
+Visualizar por pantalla una determinada pregunta y su respuesta.
+Se pide:
+
+1. Modelado completo (clases-atributos- métodos-relaciones) del problema.
+
+2. Codificación del gestor. 
+
+Entregar en pdf.

@@ -47,4 +47,8 @@ public class OpcionMultiple extends Pregunta{
         return opciones[opcion];
     }
 
+    public String toString() {
+        return super.toString() +"/n1)"+ this.opciones[0] + "/n2)"+ this.opciones[1] +"/n3)"+ this.opciones[2]+ "/n respuesta='" + respuestaCorrecta() + "'";
+    }
+
 }

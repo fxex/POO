@@ -26,4 +26,13 @@ public class VerdaderoFalso extends Pregunta{
         this.verdadero = verdadero;
     }
 
+    public String toString(){
+        if (this.verdadero) {
+            return super.toString() + "/n respuesta = verdadero";
+        } else {
+            return super.toString() + "/n respuesta = false";
+            
+        }
+    }
+
 }

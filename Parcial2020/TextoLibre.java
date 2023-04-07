@@ -21,4 +21,10 @@ public class TextoLibre extends Pregunta{
         this.respuesta = respuesta;
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString() +" respuesta='" + getRespuesta() + "'";
+    }
+
 }

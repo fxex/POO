@@ -31,5 +31,11 @@ public class Pregunta{
         this.numero = numero;
     }
 
+
+    @Override
+    public String toString() {
+        return "numero='" + getNumero() + "'" +
+            " enunciado='" + getEnunciado() + "'";
+    }
     
 }

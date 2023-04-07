@@ -35,11 +35,27 @@ public class Test {
         return cant;
     }
 
-    public void listarPreguntasPares(){
+    public void listarPreguntasRespPares(){
         for (Pregunta pregunta : parcial) {
             if (pregunta.getNumero() %2 == 0) {
                 System.out.println(pregunta.toString());
             }
         }
+    }
+
+    public void listarPreguntasRespuesta(){
+        for (Pregunta pregunta : parcial) {
+            System.out.println(pregunta.toString());
+        }
+    }
+
+    public int cantidadPreguntasNoVF(){
+        int cant = 0;
+        for (Pregunta pregunta : parcial) {
+            if (!(pregunta instanceof VerdaderoFalso)) {
+                cant++;
+            }
+        }
+        return cant;
     }
 }

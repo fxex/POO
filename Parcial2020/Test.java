@@ -58,4 +58,32 @@ public class Test {
         }
         return cant;
     }
+
+    public void listarRespuestasTextoLibre(){
+        TextoLibre t;
+        for (Pregunta pregunta : parcial) {
+            if (pregunta instanceof TextoLibre) {
+                t = (TextoLibre) pregunta;
+                System.out.println(t.getRespuesta());
+            }
+        }
+    }
+
+    public void listarPreguntasRespMultiple(){
+        for (Pregunta pregunta : parcial) {
+            if (pregunta instanceof OpcionMultiple) {
+                System.out.println(pregunta.toString());
+            }
+        }
+    }
+
+    public int cantidadPreguntasLibre(){
+        int cant = 0;
+        for (Pregunta pregunta : parcial) {
+            if (pregunta instanceof TextoLibre) {
+                cant++;
+            }
+        }
+        return cant;
+    }
 }

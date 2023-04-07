@@ -86,4 +86,20 @@ public class Test {
         }
         return cant;
     }
+
+    public void listarPreguntasRespVF(){
+        for (Pregunta pregunta : parcial) {
+            if (pregunta instanceof VerdaderoFalso) {
+                System.out.println(pregunta.toString());
+            }
+        }
+    }
+
+    public void mostrarPreguntaResp(int num){
+        for (Pregunta pregunta : parcial) {
+            if (pregunta.getNumero() == num) {
+                pregunta.toString();
+            }
+        }
+    }
 }

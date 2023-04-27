@@ -13,14 +13,17 @@ public class Test {
         parcial = new Vector<Pregunta>(dim);
     }
 
-    public void agregarElemento(Pregunta p){
+    public void agregarPregunta(Pregunta p){
         parcial.addElement(p);
     }
 
-    public void eliminarElemento(Pregunta p){
-        for (Pregunta pregunta : parcial) {
-            if (pregunta.equals(p)) {
-                parcial.remove(p);
+    public void eliminarPregunta(int id){
+        Pregunta p;
+        for (int i = 0; i < parcial.size(); i++) {
+            p = parcial.get(i);
+            if (p.getNumero() == id) {
+                parcial.remove(i);
+                i = parcial.size();
             }
         }
     }

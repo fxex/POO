@@ -95,5 +95,50 @@ public class BasedeDatos {
         }
     }
 
+    private int searchName(String n){
+        int b = -1;
+        Tabla t;
+        String nombre = "";
+        for (int i = 0; i< tablas.size(); i++) {
+            t = tablas.get(i);
+            nombre = t.getNombre();
+            if (nombre.equals(n)) {
+                b = i;
+            }
+        }
+        return b;
+    }
+    public void renameTable(String n1, String n2) throws DBException, TableException{
+        if (!abierta) {
+            throw new DBException("La base de datos no esta abierta");
+        }
+        int posicion = searchName(n1);
+        if (posicion == -1) {
+            throw new TableException("No existe la tabla con ese nombre");
+        }
+
+        if (searchName(n2) != -1) {
+            throw new TableException("Ya existe una tabla con ese nombre");
+        }
+
+        Tabla t = tablas.get(posicion);
+        t.setNombre(n2);
+    }
+
+    public Tabla exportTable(String n) throws DBException, TableException{
+        Tabla t = null;
+        int posicion = searchName(n);
+        if (!abierta) {
+            throw new DBException("La base de datos no esta abierta");
+        }
+
+        if (posicion == -1) {
+            throw new TableException("La tabla no existe");
+        }
+
+        t = tablas.get(posicion);
+
+        return t;
+    }
 
 }

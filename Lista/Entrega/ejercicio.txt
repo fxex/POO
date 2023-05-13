@@ -1,0 +1,15 @@
+En una lista enlazada simple de enteros se simula un tren y sus vagones. Los vagones están dispuesto, uno después de otro (cada vagón es un nodo). Cada vagón tiene una capacidad máxima de pasajeros y cantidad ocupada. (pueden diferir estas cantidad entre vagones, es decir un vagón puede tener una capacidad máxima de 50 personas y el siguiente de 48, la cantidad ocupada incrementa o decrementa en función de los pasajeros que suben y/o bajan). Un vagón no puede tener una capacidad ocupada mayor a la capacidad máxima.
+
+El tren hace N paradas en su recurrido. En cada parada suben y/o bajan pasajeros. 
+
+Cuando suben, ingresan por la parte delantera y van ocupando los vagones en la medida que hay espacio disponible. 
+
+Suben (np) // np: numero de pasajeros que sube al tren
+Cuando bajan se indica cuantos pasajeros bajan de cada vagón. 
+
+Bajan (v, np) // v posición del vagón, np numero de pasajeros que bajan de ese vagón
+Al inicio del recorrido solo suben pasajeros al tren, de la manera antes indicada.
+
+Luego de cada parada se muestra como están los vagones (capacidad maxima, ocupada y disponibilidad).
+
+Se pide, simular mediante una implementación del recorrido de un tren de entre 3 y 7 vagones y que efectúa al menos 3 paradas.

@@ -10,16 +10,16 @@ public class Nodo {
         this.sig = null;
     }
 
-    public Nodo(int cant){
-        this.cap = 0;
-        this.cant = cant;
+    public Nodo(int cap){
+        this.cap = cap;
+        this.cant = 0;
         this.sig = null;
     }
 
 
-    public Nodo(int cant, Nodo n){
-        this.cap = 0;
-        this.cant = cant;
+    public Nodo(int cap, Nodo n){
+        this.cap = cap;
+        this.cant = 0;
         this.sig = n;
     }
 
